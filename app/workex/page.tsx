@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import { Timeline } from '@/components/ui/Timeline';
-import { FloatingNav } from '@/components/ui/FloatingNav';
-import { FaHome } from 'react-icons/fa';
+import Navbar from '@/components/Navbar';
 
 export default function TimelineDemo() {
     const data = [
@@ -136,14 +135,7 @@ export default function TimelineDemo() {
     ];
     return (
       <div className="max-w-7xl w-full my-32">
-        <FloatingNav 
-        navItems={[
-          {name: "Home", link: "/", icon: <FaHome />},
-          {name: "About", link: "/about", icon: <FaHome />},
-          {name: "Career", link: "/career", icon: <FaHome />},
-          {name: "Learnings", link: "/learnings"}
-        ]}
-        />
+        < Navbar />
         <Timeline data={data} />
       </div>
     );

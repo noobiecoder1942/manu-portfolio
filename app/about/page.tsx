@@ -1,29 +1,15 @@
 "use client";
-import { FloatingNav } from '@/components/ui/FloatingNav';
+
 import React from 'react';
-import { FaHome } from 'react-icons/fa';
 import { HeroHighlight, Highlight } from '@/components/ui/HeroHighlight';
 import { motion } from 'framer-motion';
 import { CompetenciesSection } from '@/components/Competencies';
+import Navbar from '@/components/Navbar';
 
 const page = () => {
     return (
         <div className="overflow-hidden my-32">
-            <FloatingNav 
-                navItems={[
-                    { name: "Home", link: "/", icon: <FaHome /> },
-                    { name: "About", link: "/about", icon: <FaHome /> },
-                    { name: "Work Ex", link: "/career", icon: <FaHome /> },
-                    { name: "Education", link: "/learnings" },
-                    { name: "Skills", link: "/learnings" },
-                    { name: "A&A", link: "/learnings" },
-                    { name: "PoRs", link: "/learnings" },
-                    { name: "Hobbies", link: "/learnings" },
-                    { name: "Certifications", link: "/learnings" },
-                    { name: "Extra Curricular", link: "/learnings" }
-
-                ]}
-            />
+            <Navbar />
             
             {/* Flex Container for Hero and Profile Picture */}
             <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-8 mx-8 my-16">
