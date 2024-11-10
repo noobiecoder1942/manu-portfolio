@@ -59,7 +59,7 @@ const VortexComponent = () => {
 
 const page = () => {
     return (
-        <div className="overflow-hidden my-48">
+        <div className="hobbies-page overflow-hidden my-48 bg-black dark:bg-black">
             <Navbar />
             <VortexComponent />
             <FocusCards cards={cards} />
