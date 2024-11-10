@@ -38,6 +38,12 @@ const VortexComponent = () => {
         <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-[30rem] overflow-hidden mb-8">
             <Vortex
             className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+            backgroundColor="black"
+            rangeY={800}
+            particleCount={500}
+            baseHue={85}
+            baseSpeed={0.1}
+            rangeSpeed={0.05}
             >
                 <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
                 Beyond the Desk: My Passions and Pursuits
