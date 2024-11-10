@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/TracingBeam";
 import Navbar from "@/components/Navbar";
 
@@ -41,7 +40,7 @@ const EducationComponent = () => {
 
 const Content = [
   {
-    title: "Global Networking for Advanced Networking (GNAM)",
+    title: "Global Networking for Advanced Management (GNAM)",
     description: (
       <>
         <p>
